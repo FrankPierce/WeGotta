@@ -43,6 +43,7 @@ contract WeGotta is StandardToken, SafeMath {
     function WeGottA {
       name = "WeGotta"
       symbol = "WGT"
+      decimals = 8;
       balanceOf[msg.sender] = 50000000; /*Creator gets all tokens to be redistributed after crowdsale */
       totalSupply = 500000000;
       } 
