@@ -96,5 +96,5 @@ contract WeGotta is StandardToken, SafeMath {
 }
 
 contract MeetUp(){
-
+	uint256 public startTime = 1490112000;
 }
