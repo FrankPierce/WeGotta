@@ -94,3 +94,7 @@ contract WeGotta is StandardToken, SafeMath {
         return true;
     }
 }
+
+contract MeetUp(){
+
+}
