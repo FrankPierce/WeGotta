@@ -41,6 +41,7 @@ contract WeGotta {
     function WeGotta(uint256 initialSupply) {
       name = "WeGotta"
       symbol = "WGT"
+      decimals = 8; 
       balanceOf[msg.sender] = initialSupply;  /*set to be anywhere between 15 to 50 million as of right now it gives the creator all initial tokens */
       
   } 
