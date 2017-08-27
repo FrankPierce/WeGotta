@@ -37,13 +37,15 @@ contract WeGotta {
     
     /* This generates a public event on the blockchain that will notify clients */
     event Transfer(address indexed from, address indexed to, uint256 value);
-    
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+	  event Burned(uint amount);
+  
     function WeGotta(uint256 initialSupply) {
       name = "WeGotta"
       symbol = "WGT"
       decimals = 8; 
       balanceOf[msg.sender] = initialSupply;  /*set to be anywhere between 15 to 50 million as of right now it gives the creator all initial tokens */
-      
+        
   } 
    /* Send coins */
       function transfer(address _to, uint256 _value) {
